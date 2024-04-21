@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.weather-content {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    width: 1000px; /* Modificar el ancho */
+    height: 300px; /* Modificar el alto */
+    text-align: center;
+    padding: 20px;
+    margin: 10% auto 0;
+    background-color: #f7f5a3;
+    border-radius: 9px;
+    overflow: hidden; /* Para ocultar el contenido que desborde */
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a lo largo del contenedor */
+    align-items: center; /* Alinea los elementos verticalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si son demasiado grandes */
+}
+
+.weather-content h1 {
+    font-size: 24px; /* Modifica el tamaño del título */
+    color: #000000;
+    margin: 0;
+    flex-basis: 100%; /* Ocupa todo el ancho del contenedor */
+}
+
+.weather-content p {
+    color: #000000;
+    margin: 0;
+    flex-basis: 100%; /* Ocupa todo el ancho del contenedor */
+}
+
+.result {
+    flex-basis: 40%; /* Ancho del 40% del contenedor */
+}
+
+form {
+    flex-basis: 60%; /* Ancho del 60% del contenedor */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos del formulario se envuelvan si son demasiado grandes */
+}
+
+form input[type="text"],
+form input[type="submit"],
+form select {
+    flex-basis: calc(33.33% - 20px); /* Ancho del 33.33% del contenedor con margen entre elementos */
+    margin: 0 10px; /* Espacio entre elementos */
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form input[type="submit"] {
+    flex-basis: 100%; /* Ocupa todo el ancho del contenedor */
+}
+
+.alert-message {
+    margin: 24px 0 0;
+    color: red!important;
+}
